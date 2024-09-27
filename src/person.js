@@ -1,16 +1,16 @@
 var Person = /** @class */ (function () {
     function Person(name, age) {
-        this.Name = name;
-        this.age = age;
+        this.name = name;
+        this.age = Number(age);
     }
     Person.prototype.getName = function () {
-        return this.Name;
+        return this.name;
     };
     Person.prototype.getAge = function () {
-        return age;
+        return this.age;
     };
     return Person;
 }());
-var john = new Person('John', 30);
+var john = new Person('John', '30');
 console.log(john.getName()); // After fixing: will print "John"
 console.log(john.getAge()); // After fixing: will print 30

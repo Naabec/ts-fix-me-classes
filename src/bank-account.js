@@ -3,8 +3,7 @@ var BankAccount = /** @class */ (function () {
         this.balance = initialAmount;
     }
     BankAccount.prototype.deposit = function (amount) {
-        this.balance += amount;
-        console.log(this.balance);
+        return this.balance = this.balance + amount;
     };
     return BankAccount;
 }());

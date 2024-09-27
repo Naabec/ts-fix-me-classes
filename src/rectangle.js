@@ -1,10 +1,10 @@
 var Rectangle = /** @class */ (function () {
     function Rectangle(width, height) {
-        this.Width = width;
-        this.Height = height;
+        this.width = width;
+        this.height = height;
     }
     Rectangle.prototype.getArea = function () {
-        return width * height;
+        return this.width * this.height;
     };
     return Rectangle;
 }());
