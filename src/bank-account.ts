@@ -5,9 +5,9 @@ class BankAccount {
         this.balance = initialAmount
     }
 
-    deposit(amount: number): void {
-        this.balance += amount
-        console.log(this.balance)
+    deposit(amount: number): number {
+
+        return this.balance = this.balance + amount
     }
 }
 
